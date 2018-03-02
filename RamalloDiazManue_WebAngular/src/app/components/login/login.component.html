@@ -1,0 +1,49 @@
+<section class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <h1> CAMPAÑAS SALESIANOS DE SAN PEDRO</h1>
+    <section class="row">
+      <div class="col-sm-12 col-md-2">
+
+      </div>
+
+      <div class="col-sm-12 col-md-12 movimiento">
+        <div class="card mb-4">
+          <div class="card-block tarjeta">
+            <h3 class="card-title login">LOGIN</h3>
+
+            <form class="form-horizontal" action="" method="post">
+              <fieldset>
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="col-12 control-label no-padding negrita" for="inputEmail">Correo Electronico</label>
+
+                  <div class="col-12 no-padding ">
+                    <input id="inputEmail" name="email" type="text" placeholder="Escriba su correo electronico" class="form-control colores" required="required" autofocus [(ngModel)]="email" />
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                  <label class="col-12 control-label no-padding negrita" for="inputPassword">Contraseña</label>
+
+                  <div class="col-12 no-padding ">
+                    <input id="inputPassword" name="pass" type="password" placeholder="Escriba aquí la contraseña" class="form-control colores" required="required" [(ngModel)]="pass"/>
+                  </div>
+                </div>
+                <!-- Form actions -->
+                <div class="form-group">
+                  <div class="col-12 widget-right no-padding">
+                    <button type="button" id="btnLogin" class="btn btn-default botonSesion" (click)="login()">Iniciar sesion</button>
+                    <a routerLink="/registro"><button type="button" id="btnRegister" class="btn btn-default botonRegistro" >Registrarse</button></a>
+                  </div>
+
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

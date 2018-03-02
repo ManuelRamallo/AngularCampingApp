@@ -1,0 +1,35 @@
+
+  <div class="card">
+    <div class="card-header titulo">{{ campaign.nombre }}</div>
+    <div class="card-block">
+      <p class="contenido">Cantidad Total</p>
+      <h3 class="contenido"></h3>
+    </div>
+    <div class="card-header titulo">
+      <button type="button" class="btn btn-primary btnparaunirse" (click)="mostrarModal(modalAgregarCampaign)"><i class="fa fa-plus icon" aria-hidden="true"> UNIRSE</i></button>
+      <!--<button type="button" class="btn btn-primary btnparaunirse" (click)="goToAportaciones(campaign._id)"><i class="fa fa-plus icon" aria-hidden="true"> aportaciones</i></button>-->
+
+    </div>
+  </div>
+
+
+  <ng-template #modalAgregarCampaign let-c="close">
+    <div class="modal-header">
+      <h4 class="modal-title">Unirse a una campaña</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Codigo Campaña </label>
+          <input type="text" class="form-control" id="recipient-name" name="titulo" [(ngModel)]="codigoCamp" placeholder="Escriba el codigo de la campaña (Ej: KILO2017)"/>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="guardarCampaign(modalAgregarCampaign)">Enviar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Cerrar</button>
+    </div>
+  </ng-template>

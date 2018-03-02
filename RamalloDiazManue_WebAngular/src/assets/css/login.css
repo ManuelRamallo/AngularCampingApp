@@ -1,0 +1,58 @@
+
+.btn{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mostrar{
+  font-size: 25px;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+.login{
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+.tarjeta{
+  background-color: #7376df;
+
+}
+
+h1{
+  text-align: center;
+  padding-top: 10%;
+  color: #7376DF;
+}
+
+.negrita{
+  font-weight: bold;
+  color: white;
+}
+
+.botonSesion{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #7376df;
+  float: right;
+  margin-top: 10%;
+}
+
+
+.botonRegistro{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #7376df;
+  float: left;
+  margin-top: 10%;
+}
+
+
